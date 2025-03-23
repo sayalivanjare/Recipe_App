@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Categories</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #ff5e42;
+      padding: 15px 20px;
+      margin: 0;
+      gap: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+      display: inline;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      transform: scale(1.05);
+      color: #ffe8e0;
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid white;
+      padding-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="nav-links">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="Categories.html" class="active">📂 Categories</a></li>
+    <li><a href="new-arrivals.html" >🆕 New Arrivals</a></li>
+    <li><a href="cuisines.html">🌎 Cuisines</a></li>
+  </ul>
+
+  <h1>Choose a Category</h1>
+
+  <div class="category-buttons">
+    <button class="category-btn" data-category="Chicken">🍗 Chicken</button>
+    <button class="category-btn" data-category="Beef">🥩 Beef</button>
+    <button class="category-btn" data-category="Pasta">🍝 Pasta</button>
+    <button class="category-btn" data-category="Seafood">🐟 Seafood</button>
+    <button class="category-btn" data-category="Vegetarian">🥦 Vegetarian</button>
+    <button class="category-btn" data-category="Dessert">🍰 Dessert</button>
+  </div>
+
+  <h2>Recipes</h2>
+  <div id="recipe-grid" class="recipe-grid"></div>
+ <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Recipe App | Designed by Sayali Milind Vanjare</p>
+    </footer>
+
+  <script src="categories.js"></script>
+</body>
+</html>

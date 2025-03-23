@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="author" content="Sayali Milind Vanjare">
+    <meta name="description" content="Discover a world of flavors with our recipe app!">
+    <meta name="keywords" content="Recipe app, Easy recipes, Cooking tips, Delicious meals">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": "Chocolate Cake",
+        "author": { "@type": "Person", "name": "Sayali Milind Vanjare" }
+    }
+    </script>
+</head>
+<body>
+<div class="navbar-container">
+  <div class="brand-name">🍽️ Recipe App</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">🏠 Home</a></li>
+    <li><a href="new-arrivals.html">🆕 New Arrivals</a></li>
+    <li><a href="cuisines.html">🌍 Cuisines</a></li>
+    <li><a href="Categories.html">📂  Categories</a></li>
+  </ul>
+
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search for recipes...">
+    <button id="search-btn">🔍</button>
+  </div>
+</div>
+
+  <section class="hero" id="hero-section">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>🍽️ Discover Delicious Recipes</h1>
+    <p>Explore new flavors every day with step-by-step instructions and mouth-watering visuals.</p>
+    <a href="#recipe-grid" class="hero-btn">Explore Recipes</a>
+  </div>
+</section>
+
+
+    <!-- Featured Recipe Section -->
+    <h2 class="featured-recipe-heading">Featured Recipe</h2>
+    <div id="featured-recipe" class="featured-recipe-container">
+        <img id="featured-image" class="featured-recipe-img" src="default.jpg" alt="Featured Recipe">
+        <h3 id="featured-title" class="featured-recipe-title">Featured Recipe</h3>
+        <p id="featured-description" class="featured-recipe-desc">Try our most popular dish of the week!</p>
+        <a id="featured-link" href="#" class="view-recipe-btn" target="_blank">View Full Recipe</a>
+    </div>
+
+    <!-- Recipes List -->
+    <h2 class="recipe-list-heading">All Recipes</h2>
+    <div class="recipe-list-container">
+        <div id="recipe-grid" class="recipe-grid">
+            <!-- Recipes will be loaded here -->
+           </div>
+    </div>
+
+    <!-- 🔥 Added Missing Detailed Recipe Section -->
+    <div id="detailed-recipe" class="detailed-recipe-container">
+        <!-- Recipe details will be dynamically injected here -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Recipe App | Designed by Sayali Milind Vanjare</p>
+    </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hero = document.getElementById('hero-section');
+  if (!hero) return;
+
+  const backgrounds = [
+    'url(https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1600&q=80)',
+    'url(https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=1600&q=80)',
+    'url(https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=1600&q=80)',
+    'url(https://images.unsplash.com/photo-1589308078055-679c3d0f7c12?auto=format&fit=crop&w=1600&q=80)',
+    'url(https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)',
+    'url(https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)',
+    'url(https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)',
+    'url(https://cdn.pixabay.com/photo/2017/12/09/08/18/croissants-3009408_1280.jpg)',
+    'url(https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg)',
+    'url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80)'
+  ];
+
+
+  const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+  hero.style.backgroundImage = randomBackground;
+});
+</script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

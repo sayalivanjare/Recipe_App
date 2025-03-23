@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Arrivals</title>
+  <style>
+ /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff7f1;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #ff5e42;
+      padding: 15px 20px;
+      margin: 0;
+      gap: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+      display: inline;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      transform: scale(1.05);
+      color: #ffe8e0;
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid white;
+      padding-bottom: 3px;
+    }
+    .new-arrivals-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 16px;
+      max-width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .new-arrivals-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    #new-arrivals-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .view-recipe {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #ff5e42;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .view-recipe:hover {
+      background-color: #e04c35;
+    }
+  </style>
+</head>
+<body>
+<body>
+ <ul class="nav-links">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="Categories.html">📂 Categories</a></li>
+    <li><a href="new-arrivals.html" class="active" >🆕 New Arrivals</a></li>
+    <li><a href="cuisines.html">🌎 Cuisines</a></li>
+  </ul> <h1>🍽️ New Arrivals</h1>
+ <div id="new-arrivals-list"></div>
+  <script src="new-arrivals.js" defer></script>
+ <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Recipe App | Designed by Sayali Milind Vanjare</p>
+    </footer>
+
+</body>
+</html>

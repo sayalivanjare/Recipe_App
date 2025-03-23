@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuisines</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f5;
+      color: #333;
+    }
+
+  .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #ff5e42;
+      padding: 15px 20px;
+      margin: 0;
+      gap: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+      display: inline;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      transform: scale(1.05);
+      color: #ffe8e0;
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid white;
+      padding-bottom: 3px;
+    }
+   
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      color: #ff5e42;
+    }
+
+    /* Style for select section wrapper */
+    .select-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    #cuisine-select {
+      padding: 12px 18px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      color: #333;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #cuisine-select:focus {
+      border-color: #ff5e42;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(255, 94, 66, 0.2);
+    }
+
+    #recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .recipe-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .recipe-card-content {
+      padding: 15px;
+    }
+
+    .recipe-card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #ff5e42;
+    }
+
+    .recipe-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+.view-recipe-btn {
+  background-color: #ff5e42;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+.view-recipe-btn:hover {
+  background-color: #e85038;
+  transform: scale(1.05);
+}
+
+.view-recipe-btn:active {
+  transform: scale(0.97);
+}
+
+  </style>
+</head>
+<body>
+  <ul class="nav-links">
+     <li><a href="index.html" >🏠 Home</a></li>
+    <li><a href="new-arrivals.html">🆕 New Arrivals</a></li>
+    <li><a href="cuisines.html" class="active">🌍 Cuisines</a></li>
+    <li><a href="Categories.html">📂  Categories</a></li>
+
+  </ul>
+
+  <h2>🌎 Explore Cuisines</h2>
+
+  <div class="select-wrapper">
+    <select id="cuisine-select">
+      <option value="">Select a cuisine</option>
+      <option value="Italian">🇮🇹 Italian</option>
+      <option value="Indian">🇮🇳 Indian</option>
+      <option value="Japanese">🇯🇵 Japanese</option>
+      <option value="Mexican">🇲🇽 Mexican</option>
+      <option value="French">🇫🇷 French</option>
+    </select>
+  </div>
+ </div>
+
+   <h2>Recipes</h2>
+  <div id="recipe-grid" class="recipe-grid"></div>
+ <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Recipe App | Designed by Sayali Milind Vanjare</p>
+    </footer>
+
+  <script src="cuisines.js"></script>
+</body>
+</html>
