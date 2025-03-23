@@ -42,19 +42,11 @@ A simple and interactive **Recipe App** that allows users to search for deliciou
 
 ## 📸 Screenshots
 
-![Homepage]([https://github.com/user-attachments/assets/3c846dbd-89a9-45f5-8af3-e6c1cee83d6b](https://github.com/user-attachments/assets/3c846dbd-89a9-45f5-8af3-e6c1cee83d6b))
-
-
-
-![New-arrivals]([https://github.com/user-attachments/assets/ed69fda6-6336-4482-b2d2-2fbd02425081](https://github.com/user-attachments/assets/ed69fda6-6336-4482-b2d2-2fbd02425081))
-
-
-
-![cuisines]([https://github.com/user-attachments/assets/f37782a2-f0e9-4883-8150-ed761fa9e096](https://github.com/user-attachments/assets/f37782a2-f0e9-4883-8150-ed761fa9e096))
-
-
-
-![categories]([https://github.com/user-attachments/assets/4a7b57d6-af75-4bad-97c4-aceb06a3421b](https://github.com/user-attachments/assets/4a7b57d6-af75-4bad-97c4-aceb06a3421b))
+![Homepage](https://github.com/user-attachments/assets/97bffd7f-2a1a-4d25-befe-d6e154746dd8)
+![Search result](https://github.com/user-attachments/assets/6a665b5e-790e-417b-9b11-45f5d1cd615e)
+![New arrivals](https://github.com/user-attachments/assets/3e5f88f0-8152-4f4f-a373-a6e4de2f4e60)
+![Cuisines](https://github.com/user-attachments/assets/d9e6c78b-870c-48e4-a3cf-76e1ea9e92ce)
+![Categories](https://github.com/user-attachments/assets/060274aa-8066-494a-9a67-0c4e5299e716)
 
 
 
